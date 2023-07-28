@@ -94,12 +94,12 @@
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 class="inline-block w-5 h-5 stroke-current">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                                    d="M4 6h16M4 12h16M4 18h16">
+                                </path>
                             </svg>
                         </button>
                     </div>
                 </div>
-            </div>
             </div>
         </nav>
 
@@ -118,7 +118,7 @@
                         <h1 class="mb-5 text-5xl font-bold py-4 pt-8">Exotic tastes at your doorstep</h1>
                         <p class="mb-5 pb-6">We supply highly quality organic products</p>
                         <button
-                            class="btn bg-[#F85559] text-white normal-case border-none hover:text-[#F85559] font-bold">Shop
+                            class=" mb-8 btn bg-[#F85559] text-white normal-case border-none hover:text-[#F85559] font-bold">Shop
                             Now</button>
                     </div>
                 </div>
@@ -223,7 +223,7 @@
         <div>
             <div class="flex flex-row w-[80%] ml-[10%] gap-1 justify-between">
 
-                <div class="card w-[25%] bg-base-100 shadow-xl">
+                <div class=" justify-center card w-[25%] bg-base-100 shadow-xl">
                     <figure><img src="/images/fruit6.png" alt="Fruits" /></figure>
                     <div class="card-body">
                         <h4 class="card-title text-center text-[18px] justify-center">12.90$ - 18.85$</h4>
@@ -236,8 +236,37 @@
                             <input type="radio" name="rating-9" class="mask mask-star-2" />
                             <input type="radio" name="rating-9" class="mask mask-star-2" checked />
                         </div>
+
                         <div class="card-actions justify-center">
-                            <button class="btn text-color">Details</button>
+
+
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn hover:text-[#F85559] font-bold" onclick="my_modal_1.showModal()">Details</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box w-[35%] h-[65%] justify-items-center mx-auto">
+                                    <img class="mx-auto pb-2" src="./images/fruit6.png" alt="">
+                                    <h3 class="font-bold text-lg text-center">Apple</h3>
+                                    <p class="pt-3 text-xs text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="w-fit mx-auto">
+                                        <div class="rating rating-xs py-2 justify-items-center mx-auto">
+                                            <input type="radio" name="rating-9" class="rating-hidden" />
+                                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                            <input type="radio" name="rating-9" class="mask mask-star-2" />
+                                            <input type="radio" name="rating-9" class="mask mask-star-2" checked />
+                                        </div>
+                                    </div>
+                                    
+
+
+                                    <div class="modal-action justify-around pb-1 mb-0">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn bg-[#F85559] text-white normal-case border-none hover:text-[#F85559] font-bold">Close</button>
+                                        <button class="btn bg-[#F85559] text-white normal-case border-none hover:text-[#F85559] font-bold">Buy Now</button>
+                                    </div>
+                                </form>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -255,8 +284,24 @@
                             <input type="radio" name="rating-9" class="mask mask-star-2" />
                             <input type="radio" name="rating-9" class="mask mask-star-2" checked />
                         </div>
+
                         <div class="card-actions justify-center">
-                            <button class="btn text-color">Details</button>
+
+
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn hover:text-[#F85559] font-bold" onclick="my_modal_2.showModal()">Details</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <form method="dialog" class="modal-box w-[35%] h-[60%]">
+                                    <img src="./images/fruit7.png" alt="">
+                                    <h3 class="font-bold text-lg text-center">Orange</h3>
+                                    <p class="py-4 text-xs text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="modal-action justify-around">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn bg-[#F85559] text-white normal-case border-none hover:text-[#F85559] font-bold">Close</button>
+                                        <button class="btn bg-[#F85559] text-white normal-case border-none hover:text-[#F85559] font-bold">Buy Now</button>
+                                    </div>
+                                </form>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -274,8 +319,24 @@
                             <input type="radio" name="rating-9" class="mask mask-star-2" />
                             <input type="radio" name="rating-9" class="mask mask-star-2" checked />
                         </div>
+
                         <div class="card-actions justify-center">
-                            <button class="btn text-color">Details</button>
+
+
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn hover:text-[#F85559] font-bold" onclick="my_modal_3.showModal()">Details</button>
+                            <dialog id="my_modal_3" class="modal">
+                                <form method="dialog" class="modal-box w-[35%] h-[60%]">
+                                    <img src="./images/fruit8.png" alt="">
+                                    <h3 class="font-bold text-lg text-center">Red Dragon</h3>
+                                    <p class="py-4 text-xs text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="modal-action justify-around">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn bg-[#F85559] text-white normal-case border-none hover:text-[#F85559] font-bold">Close</button>
+                                        <button class="btn bg-[#F85559] text-white normal-case border-none hover:text-[#F85559] font-bold">Buy Now</button>
+                                    </div>
+                                </form>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -293,8 +354,24 @@
                             <input type="radio" name="rating-9" class="mask mask-star-2" />
                             <input type="radio" name="rating-9" class="mask mask-star-2" checked />
                         </div>
+
                         <div class="card-actions justify-center">
-                            <button class="btn text-color">Details</button>
+
+
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn hover:text-[#F85559] font-bold" onclick="my_modal_4.showModal()">Details</button>
+                            <dialog id="my_modal_4" class="modal">
+                                <form method="dialog" class="modal-box w-[35%] h-[60%]">
+                                    <img src="./images/fruit9.png" alt="">
+                                    <h3 class="font-bold text-lg text-center">Banana</h3>
+                                    <p class="py-4 text-xs text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="modal-action justify-around">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn bg-[#F85559] text-white normal-case border-none hover:text-[#F85559] font-bold">Close</button>
+                                        <button class="btn bg-[#F85559] text-white normal-case border-none hover:text-[#F85559] font-bold">Buy Now</button>
+                                    </div>
+                                </form>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -311,12 +388,11 @@
 
         <!-- ----Team Section---------- -->
 
-
-        <div class="w-[80%] ml-[10%] bg-opacity-60 rounded-lg" 
-        style="background-repeat: no-repeat; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(./images/team.png);">
+        <div class="w-[80%] ml-[10%] bg-opacity-60 rounded-lg min-h-fit"
+            style="background-repeat: no-repeat; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(./images/team.png);">
             <div class="">
                 <h2 class="mb-2 mt-12 text-3xl text-white text-center font-bold py-4 pt-12">Meet the Team Section</h2>
-                <p class=" text-white text-xs w-[400px] m-auto pb-16">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <p class=" text-white text-center text-xs w-[400px] m-auto pb-16">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
             </div>
 
@@ -442,12 +518,12 @@
                     </div>
                 </div>
 
-                
 
 
-                
 
-                
+
+
+
 
             </div>
 
@@ -457,14 +533,16 @@
         </div>
 
 
- 
+
+
+
 
     </main>
 
     <!-- ------------Footer------------- -->
 
     <footer>
-        <footer class="footer footer-center p-10 bg-[#121212] text-primary-content">
+        <footer class="footer footer-center p-10 bg-[#121212] text-primary-content mt-5 ">
             <div class="flex flex-1 w-3/4 gap-2 justify-center">
                 <img class="w-7 h-7" src="./images/logo.png" alt="">
                 <h3 class="normal-case text-xl font-bold text-white text-center items-center">Fruit Brust</h3>
